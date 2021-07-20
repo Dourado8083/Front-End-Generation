@@ -1,0 +1,37 @@
+*{	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Open Sans', sans-serif;
+}
+html,body{
+height: 100%;
+background-color: #00ffff;
+}
+section.videos{
+	padding:70px 0 50px 0;	
+	}
+	section.videos .box-video{
+	float: left;
+	width: 33.3%;
+	padding-top: calc(33.3%  * 0.6);
+	position: relative;
+	border:5px solid white;
+	}
+	section.videos iframe{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+h1{
+align-items: center;
+justify-content: center;
+display: flex;
+}
+.paragra_wrapper{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;   
+}
