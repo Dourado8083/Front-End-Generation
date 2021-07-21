@@ -34,21 +34,22 @@
 			<form>
 				<div class="form-wraper">
 					<p>Nome Completo</p>
-					<input type="text" name="nome" required placeholder="Nome">
+					<input type="text" name="nome" required placeholder="Nome" id="nome" onkeyup="validaNome()">
 				</div><!--form-wraper-->
+				<div id="txtNome"></div>
 
 				<div class="form-wraper">
 					<p>E-mail</p>
-					<input type="text" name="email" required placeholder="E-mail">
+					<input type="text" name="email" required placeholder="E-mail" id="email" onkeyup="validaEmail()">
 				</div><!--form-wraper-->
-
+                <div id="txtEmail"></div>
 				<div class="form-wraper">
 					<p>Telefone</p>
 					<input type="text" name="telefone" required placeholder="Telefone">
 				</div><!--form-wraper-->
 
 				<div class="form-wraper">
-					<input type="submit" name="acao" value="Enviar">
+					<input onclick="alert('Você Quer mesmo ajudar a causa,Obrigado!')" type="submit" name="acao" value="Enviar">
 				</div><!--form-wraper-->
 				<div class="form-wraper">
 					<p>* Campos Obrigatórios</p>
@@ -72,7 +73,7 @@
 	<div class="container">
 
 		<div class="flex-mosaico">
-		<div style="background-image:url('img/agua suja.jpg');" class="item-1-mosaico"></div><!--item1-mosaico-->
+		<div style="background-image:url('img/agua suja.jpg');" class="item-1-mosaico" id="logo" onmouseout="over(this);" onmouseover="out(this);"></div><!--item1-mosaico-->
 
 		<div class="item-2-mosaico">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo eu sapien ultricies dignissim. Vestibulum feugiat interdum pharetra. Curabitur vulputate a lectus nec maximus. Quisque id interdum eros. Donec porta nibh eget diam consectetur fringilla. Proin in urna faucibus, volutpat enim a, maximus ipsum</p>
@@ -82,7 +83,7 @@
 
 
 		<div class="flex-mosaico">
-		<div style="background-image:url('img/tartaa.jpg');order:2;" class="item-1-mosaico"></div><!--item1-mosaico-->
+		<div style="background-image:url('img/tartaa.jpg');order:2;" class="item-1-mosaico" id="logo" onmouseout="over(this);" onmouseover="out(this);"></div><!--item1-mosaico-->
 
 		<div class="item-2-mosaico" style="order:1;">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo eu sapien ultricies dignissim. Vestibulum feugiat interdum pharetra. Curabitur vulputate a lectus nec maximus. Quisque id interdum eros. Donec porta nibh eget diam consectetur fringilla. Proin in urna faucibus, volutpat enim a, maximus ipsum</p>
@@ -96,12 +97,14 @@
 
 
 <footer>
-	<div class="container">
+	<div class="container"> 
 		<img src="img/icone.face.png" />
 		<p>Todos os Direitos Reservados a Gustavo Dourado Santos&copy </p>
 	</div><!--container-->
 </footer>
 
+<script src = "script.js">
 
+</script>
 </body>
 </html>
